@@ -84,8 +84,9 @@ const Iframe: React.FC<React.PropsWithChildren<unknown>> = () => {
 
   return (
     <HeightTrackingContainer port={port}>
+      // DND context here
       <div>
-        <Renderer port={port} setState={setState} state={state} />
+        <Renderer port={port} state={state} />
       </div>
     </HeightTrackingContainer>
   )
